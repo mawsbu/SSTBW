@@ -109,14 +109,21 @@ nav a:hover{
     float: right;
     margin-right: 5em;
 }
+.search img{
+    height: 30px;
+    position: relative;
+    left: -3em;
+    top: 0.3em;
+}
+
 .rounded{
     height: 2em;
     background-color: #333333;
     color: gray;
     font-family: arial;
     font-size: 1.1em;
-    border-top-left-radius:  0.3em;
-    border-bottom-left-radius: 0.3em;
+    border-radius:  0.3em;
+    border-radius: 0.3em;
     border-width: 0;
     padding-left: 0.5em;
     padding: .3em 0.5em;
@@ -137,6 +144,11 @@ nav a:hover{
     line-height: 50%;
     
 }
+.social_h img{
+    height: 30px;
+    position: relative;
+    top: 0.3em;
+}
 
 /*body*/
 .content{
@@ -155,12 +167,26 @@ nav a:hover{
     padding: 0;
     float: left;
 }
+.left img{
+
+}
 .right{
     
     width: 27.5em;
     margin:0;
     padding: 0;
     float: left;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+    position: relative;
+    top: -1em;
+    left: 2em;
 }
 
 .text{
@@ -226,6 +252,9 @@ nav a:hover{
 .column_f ul{
     padding-bottom: 3em;
  clear: both;
+}
+.column_f img{
+    height: 22px;
 }
 
 
