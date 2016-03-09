@@ -257,6 +257,18 @@ nav a:hover{
     height: 22px;
 }
 
+@media only screen and (max-width: 450px){
+    
+    .header{
+    margin: 0;
+    }
+    .left{
+        float: none;
+    }
+    .right{
+        float: none;
+    }
+}   
 
 
 
