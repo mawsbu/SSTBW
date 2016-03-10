@@ -261,12 +261,44 @@ nav a:hover{
     
     .header{
     margin: 0;
+    width: 100%;
     }
+
+    nav li{
+        display: none; /* ukrycie elem */
+        margin: 0;
+    }
+
+    .login{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .social_h{
+        display: none;
+    }
+    .header hr{
+    display: none;
+    } 
+
+
     .left{
         float: none;
+        width: 100%;
     }
     .right{
         float: none;
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    * img{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
     }
 }   
 
