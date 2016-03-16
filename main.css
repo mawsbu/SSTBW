@@ -167,9 +167,7 @@ nav a:hover{
     padding: 0;
     float: left;
 }
-.left img{
 
-}
 .right{
     
     width: 27.5em;
@@ -284,26 +282,7 @@ nav a:hover{
     .header hr{
     display: none;
     } 
-    .header:before {
-       content: "";
-       display: block;
-       width: 40px;
-       height: 40px;
-       padding: 1em;
-       background: url(img/menu_rwd.png) no-repeat center;
-       background-size: 40px 40px;
-       float: left;
-    }
-    .header:after {
-       content: "";
-       display: block;
-       width: 40px;
-       height: 40px;
-       padding: 1em;
-       background: url(img/lupa_m.png) no-repeat center;
-       background-size: 40px 40px;
-       float: right;
-    }
+    
     .header a{
         float: left;
         /*position: relative;*/
@@ -311,18 +290,7 @@ nav a:hover{
     .header img{
         width: 180px;
     }
-    .content:before{
-        content: "MONDAY, FEBRUARY 29, 2016";
-        text-align: center;        
-        padding-top: 1em;
-        font-family: 'Lato', sans-serif;
-        color: grey;
-        display: block;
-        width: 100%;
-        height: 30px;
-        background-color: lightgrey;
-       /*background-size: 100%;*/
-    }
+    
     .content{
         width: 100%;
     }
@@ -351,26 +319,11 @@ nav a:hover{
     h1.last{
         background-color: white;
     }
-    footer:before {
-       content: "";
-       display: block;
-       margin-top: 2em;
-       margin-bottom: 3em;
-       margin-left: 2em;
-       width: 200px;
-       height: 65px;
-       background: url(img/logo.jpg);
-    }
 
     footer{
         width: 100%;
     }
-    hr:after{
-        content: "GENERAL SHOP CONTACT";
-        text-align: justify;
-        display: block;
-        /*float: left;*/
-    }
+
     .column_f{
         clear: both;
     }
