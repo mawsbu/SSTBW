@@ -39,21 +39,20 @@ footer{
     clear: both;
 }
 
-hr{
-    margin-top: 0;
-    clear: both;
-}
 ul{
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
     list-style: none;
-    overflow: hidden;
+   /* overflow: hidden;*/
+    clear: both;
+    border-top: solid;
+    border-color: gray;
+    border-width: 1px;
 }
 
 li{
     float: left;
 }
-
 
 nav a{
     display: inline-block;
@@ -107,15 +106,15 @@ nav a:hover{
 }
 .search{
     float: right;
-    margin-right: 5em;
 }
-.search img{
+.search_img{
     height: 30px;
     position: relative;
-    left: -3em;
-    top: 0.3em;
+    left: 115px;
+    bottom: 2px;
+    background-image: url("img/lupa.png");
+    background-repeat: no-repeat;
 }
-
 .rounded{
     height: 2em;
     background-color: #333333;
@@ -149,7 +148,8 @@ nav a:hover{
     position: relative;
     top: 0.3em;
 }
-
+/*..........................................................................................................*/
+/*..........................................................................................................*/
 /*body*/
 .content{
     background-color: #f8f8f8;
@@ -202,6 +202,7 @@ nav a:hover{
 }
 .last{
     background-color: #e0e0e4;
+    overflow: hidden;
 }
 
 .link{
@@ -219,6 +220,8 @@ nav a:hover{
     font-size: 1.4em;
     font-weight: bold;
 }
+/*..........................................................................................................*/
+/*..........................................................................................................*/
 /*#*/
 .logo_s{
     float: left;
@@ -231,7 +234,7 @@ nav a:hover{
 .column_f p{
     text-transform: uppercase;
     font-size: 1em;
-    color: grey;
+    color: gray;
     padding-bottom: 1em;
     padding-top: 1.5em;
 }
@@ -255,6 +258,19 @@ nav a:hover{
     height: 22px;
 }
 
+/*..........................................................................................................*/
+/*..........................................................................................................*/
+/*ukryc elem mobilowe*/
+@media only screen and (min-width: 451px){
+    .menu_mobile{
+        display: none;
+    }
+
+}
+
+/*..........................................................................................................*/
+/*..........................................................................................................*/
+/*mobile*/
 @media only screen and (max-width: 450px){
     
     .header{
@@ -269,27 +285,43 @@ nav a:hover{
         display: none; /* ukrycie elem */
         margin: 0;
     }
+    ul{
+        border: 0px;
+    }
 
     .login{
         display: none;
     }
-    .search{
-        display: none;
-    }
+  
     .social_h{
         display: none;
     }
-    .header hr{
-    display: none;
-    } 
+    .search_img{
+        position: initial;
+        width: 50px;
+        height: 50px;
+        margin-top: 1em;
+        margin-right: 1em;
+        background-image: url("img/lupa_m.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+
+    .rounded{
+        display: none;
+    }
     
-    .header a{
+    .menu_mobile{
         float: left;
-        /*position: relative;*/
+        display: block;
+        height: 50px;
+        padding: 1em;
+        margin-right: 3em;
     }
-    .header img{
-        width: 180px;
+    .menu_mobile img{
+        height: 100%;
     }
+   
     
     .content{
         width: 100%;
@@ -302,23 +334,35 @@ nav a:hover{
         float: none;
         width: 100%;
     }
+    section{
+        background-color: #f3f4f4;
+    }
+    .text{
+    background-color: #f3f4f4;
+    }
+    .triangle{
+    border-bottom: 10px solid #f3f4f4;
+    }
+
     
     section img{
         width: 100%;
+    }
+    #visible_mobile h1{
+        background-color: white;
     }
     .left section:not(.visible_mobile){
         display: none;
     }
 
     .right section:not(#visible_mobile){
-    display: none;
+        display: none;
     }
     #visible_mobile{
         background-color: white;
+        overflow: hidden;
     }
-    h1.last{
-        background-color: white;
-    }
+    
 
     footer{
         width: 100%;
