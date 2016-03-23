@@ -84,9 +84,7 @@ nav a:hover{
     float: left;
     margin-bottom: 0.5em;
 }
-.header hr{
-    border-color: #333333;
-}
+
 .login{
     float: right;
 }
@@ -270,6 +268,9 @@ nav a:hover{
 #logo_foter{
     display: none;
 }
+.footer4phone{
+    display: none;
+}
 
 }
 
@@ -279,8 +280,8 @@ nav a:hover{
 @media only screen and (max-width: 450px){
     
     .header{
-    margin: 0;
-    width: 100%;
+        margin: 0;
+        width: 100%;
     }
     header{
         height: auto;
@@ -343,13 +344,11 @@ nav a:hover{
         background-color: #f3f4f4;
     }
     .text{
-    background-color: #f3f4f4;
+        background-color: #f3f4f4;
     }
-    .triangle{
-    border-bottom: 10px solid #f3f4f4;
+    .text::before{
+        border-bottom: 10px solid #f3f4f4;
     }
-
-    
     section img{
         width: 100%;
     }
@@ -366,12 +365,30 @@ nav a:hover{
     #important4phone{
         background-color: white;
         overflow: hidden;
-    }
-    
-
+    } 
     footer{
         width: 100%;
+        height: auto;
     }
+    #logo_foter{
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    .footer4phone{
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        overflow: hidden;
+    }
+    .footer4phone a{
+        display: inline-block;
+        color: gray;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .3em 0.5em;
+        font-family: arial;
+       
+    }
+   
 
     .column_f{
         clear: both;
@@ -379,12 +396,15 @@ nav a:hover{
     .logo_s{
         clear: both;
     }
-    footer ul:not(.footer_mobile){
+    .footer_mobile{
+        clear: both;
+    }
+    /*footer ul:not(.footer_mobile){
         display: none;
     }
     footer p{
         display: none;
-    }
+    }*/
 }   
 
 
