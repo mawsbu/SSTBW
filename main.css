@@ -176,16 +176,6 @@ nav a:hover{
     float: left;
 }
 
-/*.triangle{
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 10px solid white;
-    position: relative;
-    top: -1em;
-    left: 2em;
-}*/
 
 .text::before{
     content: "";
@@ -274,9 +264,12 @@ nav a:hover{
 /*..........................................................................................................*/
 /*ukryc elem mobilowe*/
 @media only screen and (min-width: 451px){
-    .menu_mobile{
-        display: none;
-    }
+.menu_mobile{
+    display: none;
+}
+#logo_foter{
+    display: none;
+}
 
 }
 
@@ -360,17 +353,17 @@ nav a:hover{
     section img{
         width: 100%;
     }
-    #visible_mobile h1{
+    #important4phone h1{
         background-color: white;
     }
-    .left section:not(.visible_mobile){
+    .left section:not(.important4phone){
         display: none;
     }
 
-    .right section:not(#visible_mobile){
+    .right section:not(#important4phone){
         display: none;
     }
-    #visible_mobile{
+    #important4phone{
         background-color: white;
         overflow: hidden;
     }
