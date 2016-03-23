@@ -176,7 +176,7 @@ nav a:hover{
     float: left;
 }
 
-.triangle{
+/*.triangle{
     width: 0;
     height: 0;
     border-left: 7px solid transparent;
@@ -185,6 +185,18 @@ nav a:hover{
     position: relative;
     top: -1em;
     left: 2em;
+}*/
+
+.text::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+    position: relative;
+    top: -4.2em;
+    left: 0.5em;
 }
 
 .text{
