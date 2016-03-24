@@ -39,21 +39,21 @@ footer{
     clear: both;
 }
 
-hr{
-    margin-top: 0;
-    clear: both;
+.nav{
+    border-top: solid;
+    border-color: gray;
+    border-width: 1px;
 }
 ul{
     margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
+    padding: 0.5em;
+    list-style: none; 
+    clear: both;
 }
 
 li{
     float: left;
 }
-
 
 nav a{
     display: inline-block;
@@ -85,9 +85,7 @@ nav a:hover{
     float: left;
     margin-bottom: 0.5em;
 }
-.header hr{
-    border-color: #333333;
-}
+
 .login{
     float: right;
 }
@@ -107,7 +105,14 @@ nav a:hover{
 }
 .search{
     float: right;
-    margin-right: 5em;
+}
+.search_img{
+    height: 30px;
+    position: relative;
+    left: 115px;
+    bottom: 2px;
+    background-image: url("img/lupa.png");
+    background-repeat: no-repeat;
 }
 .rounded{
     height: 2em;
@@ -115,8 +120,8 @@ nav a:hover{
     color: gray;
     font-family: arial;
     font-size: 1.1em;
-    border-top-left-radius:  0.3em;
-    border-bottom-left-radius: 0.3em;
+    border-radius:  0.3em;
+    border-radius: 0.3em;
     border-width: 0;
     padding-left: 0.5em;
     padding: .3em 0.5em;
@@ -137,7 +142,13 @@ nav a:hover{
     line-height: 50%;
     
 }
-
+.social_h img{
+    height: 30px;
+    position: relative;
+    top: 0.3em;
+}
+/*..........................................................................................................*/
+/*..........................................................................................................*/
 /*body*/
 .content{
     background-color: #f8f8f8;
@@ -155,12 +166,26 @@ nav a:hover{
     padding: 0;
     float: left;
 }
+
 .right{
     
     width: 27.5em;
     margin:0;
     padding: 0;
     float: left;
+}
+
+
+.text::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+    position: relative;
+    top: -4.2em;
+    left: 0.5em;
 }
 
 .text{
@@ -178,6 +203,7 @@ nav a:hover{
 }
 .last{
     background-color: #e0e0e4;
+    overflow: hidden;
 }
 
 .link{
@@ -195,19 +221,18 @@ nav a:hover{
     font-size: 1.4em;
     font-weight: bold;
 }
-/*#*/
+/*..........................................................................................................*/
+/*..........................................................................................................*/
+/*stopka*/
 .logo_s{
     float: left;
     padding-top: 1.5em;
 }
-.column_f{
-    font-family: arial;
-    float: right;
-}
+
 .column_f p{
     text-transform: uppercase;
     font-size: 1em;
-    color: grey;
+    color: gray;
     padding-bottom: 1em;
     padding-top: 1.5em;
 }
@@ -225,10 +250,166 @@ nav a:hover{
 }
 .column_f ul{
     padding-bottom: 3em;
- clear: both;
+    clear: both;
+}
+.column_f img{
+    height: 22px;
 }
 
+/*..........................................................................................................*/
+/*..........................................................................................................*/
+/*ukryc elem mobilowe*/
+@media only screen and (min-width: 451px){
+.column_f{
+    font-family: arial;
+    float: right;
+}
+.menu_mobile{
+    display: none;
+}
+#logo_foter{
+    display: none;
+}
+.footer4phone{
+    display: none;
+}
 
+}
+
+/*..........................................................................................................*/
+/*..........................................................................................................*/
+/*mobile*/
+@media only screen and (max-width: 450px){
+    
+    .header{
+        margin: 0;
+        width: 100%;
+    }
+    header{
+        height: auto;
+    }
+
+    nav li{
+        display: none; /* ukrycie elem */
+        margin: 0;
+    }
+    ul{
+        border: 0px;
+    }
+
+    .login{
+        display: none;
+    }
+  
+    .social_h{
+        display: none;
+    }
+    .search_img{
+        position: initial;
+        width: 50px;
+        height: 50px;
+        margin-top: 1em;
+        margin-right: 1em;
+        background-image: url("img/lupa_m.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    .nav{
+        border: 0px;
+    }
+    .rounded{
+        display: none;
+    }
+    
+    .menu_mobile{
+        float: left;
+        display: block;
+        height: 50px;
+        padding: 1em;
+        margin-right: 3em;
+    }
+    .menu_mobile img{
+        height: 100%;
+    }
+   
+    
+    .content{
+        width: 100%;
+    }
+    .left{
+        float: none;
+        width: 100%;
+    }
+    .right{
+        float: none;
+        width: 100%;
+    }
+    section{
+        background-color: #f3f4f4;
+    }
+    .text{
+        background-color: #f3f4f4;
+    }
+    .text::before{
+        border-bottom: 10px solid #f3f4f4;
+    }
+    section img{
+        width: 100%;
+    }
+    #important4phone h1{
+        background-color: white;
+    }
+    .left section:not(.important4phone){
+        display: none;
+    }
+
+    .right section:not(#important4phone){
+        display: none;
+    }
+    #important4phone{
+        background-color: white;
+        overflow: hidden;
+    } 
+    footer{
+        width: 100%;
+        overflow: auto;
+        margin-bottom: 3em;
+    }
+    #logo_foter{
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    .footer4phone{
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        overflow: hidden;
+        text-align: justify;
+    }
+    .footer4phone a{
+        display: inline-block;
+        vertical-align: top;
+        color: gray;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .3em 0.5em;
+        font-family: arial;   
+    }
+  
+    .column_f div{
+        clear: both;
+    }
+
+    .logo_s{
+        margin-bottom: 2em;
+    }
+    
+    .invisible4phone{
+        display: none;
+    }
+    footer p{
+        display: none;
+    }
+}   
 
 
 

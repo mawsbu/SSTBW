@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>LLL site</title>
         <meta name="LLL" content="Lorem impsum">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
@@ -12,19 +13,20 @@
     <body>
         <header>
             <div class="header">
+                <div class="menu_mobile"><img src="img/menu_rwd.png"></div>
                 <a href="index.html"><img src="img/logo.jpg" alt="lorem ipsum"></a>
                 <div class="login"><p>Sign In or Join</p></div>
                 <div class="search">
                     <input type="text" class="rounded" value="Search" />
-                    <p>dodac ikonke lupki</p>
+                    <div class="search_img"></div>
                 </div>
                 <div class="social_h">
                     <p>Connect:</p>
-                    <p>nowe ikonki</p>
+                    <img src="img/facebook_h.png" alt="lorem ipsum">
+                    <img src="img/twitter_h.png" alt="lorem ipsum">
                 </div>
-                <hr>
                 <nav>
-                    <ul>
+                    <ul class="nav">
                     <li><a href="#News">News</a></li>
                     <li><a href="#Video">Video</a></li>
                     <li><a href="#Photography">Photography</a></li>
@@ -45,7 +47,7 @@
 
 <!-- lewa kolumna -->
             <div class="left">
-                <section>
+                <section class="important4phone">
                     <img src="img/video_d.jpg" alt="lorem ipsum">
                     <div class="text">
                     <h1>Sed porta quam non tincidunt dapibus</h1>
@@ -54,7 +56,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section class="important4phone">
                     <img src="img/img_d.jpg" alt="lorem ipsum">
                     <div class="text">
                     <h1>Maecenas fringilla suscipit ante. Nullam nec rutrum mi, eget tempus nulla.</h1>
@@ -63,7 +65,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section class="important4phone">
                     <img src="img/video_d.jpg" alt="lorem ipsum">
                     <div class="text">
                     <h1>Sed porta quam non tincidunt dapibus</h1>
@@ -73,7 +75,7 @@
                 </section>
 
                 <section>
-                    <img src="img/img_d.jpg" alt="lorem ipsum">
+                    <img  src="img/img_d.jpg" alt="lorem ipsum">
                     <div class="text">
                     <h1>Maecenas fringilla suscipit ante. Nullam nec rutrum mi, eget tempus nulla.</h1>
                     <p>Suspendisse ac velit faucibus, finibus lacus vitae, pharetra mauris. Aliquam ornare orci dui, vitae ultrices enim molestie nec. In arcu ante, pulvinar ac lorem sit amet, dapibus malesuada ipsum.</p>
@@ -93,7 +95,7 @@
 
 <!-- prawa kolumna -->
             <div class="right">
-                <section class="last">
+                <section  class="last" id="important4phone">
                 <h1 class="last">The Latest</h1>
                 <ul>
                 <li class="link"><a href="#artykul">Nullam nec rutrum mi, eget tempus nulla</a></li>
@@ -142,15 +144,24 @@
 
             </div>
         </div>
+        
 
 <!-- stopka -->
         <footer>
-            <hr>
+            <div id="logo_foter"><a href="index.html"><img src="img/logo_s.jpg" alt="lorem ipsum"></a></div>
+            <ul class="footer4phone">
+                <li><a href="#General">General</a></li>
+                <li><a href="#Shop">Shop</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+         
             <div class="logo_s"><a href="index.html"><img src="img/logo_s.jpg" alt="lorem ipsum"></a></div>
             <div class="column_f">
                 <p>Follow us</p>
-                <div>
-                    <p>tu beda nowe ikonki</p>
+               <div>
+                    <img src="img/facebook_s.png" alt="lorem ipsum">
+                    <img src="img/instagram_s.png" alt="lorem ipsum">
+                    <img src="img/twitter_s.png" alt="lorem ipsum">
                 </div>
                 <ul>
                     <li class="link"><a href="#link">Terms Of Service</a></li>
@@ -158,9 +169,10 @@
                     <li class="link"></li>
                 </ul>
             </div>
+
             <div class="column_f">
                 <p>Contact</p>
-                <ul>
+                <ul class="invisible4phone">
                     <li class="link"><a href="#link">Customer Service</a></li>
                     <li class="link"><a href="#link">Contact</a></li>
                     <li class="link"></li>
@@ -168,7 +180,7 @@
             </div>
             <div class="column_f">
                 <p>Shop</p>
-                <ul>
+                <ul class="invisible4phone">
                     <li class="link"><a href="#link">Store</a></li>
                     <li class="link"><a href="#link">Subscribe</a></li>
                     <li class="link"><a href="#link">Trips</a></li>
@@ -180,7 +192,7 @@
                 </div>
             <div class="column_f">
                 <p>General</p>
-                <ul>
+                <ul class="invisible4phone">
                     <li class="link"><a href="#link">About</a></li>
                     <li class="link"><a href="#link">Jobs</a></li>
                     <li class="link"><a href="#link">Newsletter</a></li>
