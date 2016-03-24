@@ -39,15 +39,16 @@ footer{
     clear: both;
 }
 
-ul{
-    margin: 0;
-    padding: 0.5em;
-    list-style: none;
-   /* overflow: hidden;*/
-    clear: both;
+.nav{
     border-top: solid;
     border-color: gray;
     border-width: 1px;
+}
+ul{
+    margin: 0;
+    padding: 0.5em;
+    list-style: none; 
+    clear: both;
 }
 
 li{
@@ -222,15 +223,12 @@ nav a:hover{
 }
 /*..........................................................................................................*/
 /*..........................................................................................................*/
-/*#*/
+/*stopka*/
 .logo_s{
     float: left;
     padding-top: 1.5em;
 }
-.column_f{
-    font-family: arial;
-    float: right;
-}
+
 .column_f p{
     text-transform: uppercase;
     font-size: 1em;
@@ -252,7 +250,7 @@ nav a:hover{
 }
 .column_f ul{
     padding-bottom: 3em;
- clear: both;
+    clear: both;
 }
 .column_f img{
     height: 22px;
@@ -262,6 +260,10 @@ nav a:hover{
 /*..........................................................................................................*/
 /*ukryc elem mobilowe*/
 @media only screen and (min-width: 451px){
+.column_f{
+    font-family: arial;
+    float: right;
+}
 .menu_mobile{
     display: none;
 }
@@ -312,7 +314,9 @@ nav a:hover{
         background-repeat: no-repeat;
         background-position: center; 
     }
-
+    .nav{
+        border: 0px;
+    }
     .rounded{
         display: none;
     }
@@ -368,7 +372,8 @@ nav a:hover{
     } 
     footer{
         width: 100%;
-        height: auto;
+        overflow: auto;
+        margin-bottom: 3em;
     }
     #logo_foter{
         margin-bottom: 2em;
@@ -378,33 +383,32 @@ nav a:hover{
         border-bottom: 1px solid lightgray;
         border-top: 1px solid lightgray;
         overflow: hidden;
+        text-align: justify;
     }
     .footer4phone a{
         display: inline-block;
+        vertical-align: top;
         color: gray;
         text-decoration: none;
         text-transform: uppercase;
         padding: .3em 0.5em;
-        font-family: arial;
-       
+        font-family: arial;   
     }
-   
+  
+    .column_f div{
+        clear: both;
+    }
 
-    .column_f{
-        clear: both;
-    }
     .logo_s{
-        clear: both;
+        margin-bottom: 2em;
     }
-    .footer_mobile{
-        clear: both;
-    }
-    /*footer ul:not(.footer_mobile){
+    
+    .invisible4phone{
         display: none;
     }
     footer p{
         display: none;
-    }*/
+    }
 }   
 
 
